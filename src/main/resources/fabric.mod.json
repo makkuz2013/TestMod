@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "testmod",
+	"version": "${version}",
+	"name": "TestMod",
+	"description": "Test Mod by Maksim Kuziakov for fun",
+	"authors": [
+		"Maksim Kuziakov"
+	],
+	"contact": {
+		"homepage": "https://maksimkuziakov.lt",
+		"sources": "https://github.com/TestMod"
+	},
+	"license": "MIT",
+	"icon": "assets/testmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lt.makkuz2013.testmod.TestMod"
+		],
+		"fabric-datagen": [
+			"lt.makkuz2013.testmod.TestModDataGenerator"
+		],
+		"client": [
+			"lt.makkuz2013.testmod.TestModClient"
+		]
+	},
+	"mixins": [
+		"testmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
